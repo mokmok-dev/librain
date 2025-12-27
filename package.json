@@ -4,15 +4,20 @@
   "scripts": {
     "build": "pnpm --recursive --parallel --if-present --aggregate-output /^build/",
     "dev": "pnpm --recursive --parallel --if-present --stream /^dev/",
+    "format": "biome check .",
     "prepare": "pnpm --aggregate-output /^prepare:/",
     "prepare:git": "git config --local core.hooksPath .githooks"
   },
   "lint-staged": {
     "**/package.json": [
       "sort-package-json"
+    ],
+    "**/*.{js,ts,jsx,tsx,json,md,yaml,yml}": [
+      "biome check"
     ]
   },
   "devDependencies": {
+    "@biomejs/biome": "catalog:",
     "lint-staged": "catalog:",
     "sort-package-json": "catalog:"
   },
