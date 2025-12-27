@@ -5,5 +5,5 @@ export default defineConfig({
     globals: true,
     environment: 'node',
   },
-  projects: ['packages/*'],
+  projects: ['apps/*', 'packages/*'],
 });
