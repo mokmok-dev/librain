@@ -15,5 +15,5 @@ catalogMode: strict
 
 cleanupUnusedCatalogs: true
 
-only-built-dependencies:
+onlyBuiltDependencies:
   - esbuild
