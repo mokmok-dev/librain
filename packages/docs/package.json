@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "build": "honkit build",
-    "dev": "honkit serve"
+    "dev": "honkit serve",
+    "format": "biome check ."
   },
   "devDependencies": {
     "honkit": "catalog:"
