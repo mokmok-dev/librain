@@ -1,0 +1,11 @@
+{
+  "name": "@librain/docs",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "honkit build",
+    "dev": "honkit serve"
+  },
+  "devDependencies": {
+    "honkit": "catalog:"
+  }
+}

@@ -2,6 +2,8 @@
   "name": "@librain/monorepo",
   "version": "0.0.0",
   "scripts": {
+    "build": "pnpm --recursive --parallel --if-present --aggregate-output /^build/",
+    "dev": "pnpm --recursive --parallel --if-present --stream /^dev/",
     "prepare": "pnpm --aggregate-output /^prepare:/",
     "prepare:git": "git config --local core.hooksPath .githooks"
   },
