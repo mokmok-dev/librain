@@ -1,7 +1,19 @@
 {
   "name": "@librain/monorepo",
   "version": "0.0.0",
-  "devDependencies": {},
+  "scripts": {
+    "prepare": "pnpm --aggregate-output /^prepare:/",
+    "prepare:git": "git config --local core.hooksPath .githooks"
+  },
+  "lint-staged": {
+    "**/package.json": [
+      "sort-package-json"
+    ]
+  },
+  "devDependencies": {
+    "lint-staged": "catalog:",
+    "sort-package-json": "catalog:"
+  },
   "packageManager": "pnpm@10.26.2",
   "devEngines": {
     "runtime": [
