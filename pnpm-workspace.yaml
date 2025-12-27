@@ -2,15 +2,9 @@ packages:
   - apps/*
   - packages/*
 
-# ビルドを許可する依存パッケージ
+# ビルドを許可する依存パッケージ（pnpm installで提案されたもの）
 only-built-dependencies:
-  - '@biomejs/biome'
-  - '@types/node'
-  - 'lint-staged'
-  - 'sort-package-json'
-  - 'typescript'
-  - 'vitest'
-  - 'honkit'
+  - 'esbuild'
 
 catalog:
   '@biomejs/biome': 2.3.10
