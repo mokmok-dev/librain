@@ -5,7 +5,7 @@
     "lib": ["ES2022"],
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
-    "allowJs": true,
+    "allowJs": false,
     "checkJs": false,
     "strict": true,
     "noUnusedLocals": true,
@@ -19,10 +19,8 @@
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-    "outDir": "./dist",
-    "rootDir": "./src",
+    "composite": true,
     "types": ["node"]
   },
-  "include": [],
   "exclude": ["node_modules", "dist"]
 }
