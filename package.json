@@ -7,6 +7,7 @@
     "format": "biome check .",
     "prepare": "pnpm --aggregate-output /^prepare:/",
     "prepare:git": "git config --local core.hooksPath .githooks",
+    "test": "pnpm --recursive --parallel --if-present --aggregate-output /^test/",
     "typecheck": "pnpm --recursive --parallel --if-present --aggregate-output /^typecheck/"
   },
   "lint-staged": {
@@ -22,7 +23,8 @@
     "@types/node": "catalog:",
     "lint-staged": "catalog:",
     "sort-package-json": "catalog:",
-    "typescript": "catalog:"
+    "typescript": "catalog:",
+    "vitest": "catalog:"
   },
   "packageManager": "pnpm@10.26.2",
   "devEngines": {
