@@ -6,7 +6,8 @@
     "dev": "pnpm --recursive --parallel --if-present --stream /^dev/",
     "format": "biome check .",
     "prepare": "pnpm --aggregate-output /^prepare:/",
-    "prepare:git": "git config --local core.hooksPath .githooks"
+    "prepare:git": "git config --local core.hooksPath .githooks",
+    "typecheck": "pnpm --recursive --if-present typecheck"
   },
   "lint-staged": {
     "**/package.json": [
@@ -18,8 +19,11 @@
   },
   "devDependencies": {
     "@biomejs/biome": "catalog:",
+    "@types/node": "catalog:",
     "lint-staged": "catalog:",
-    "sort-package-json": "catalog:"
+    "sort-package-json": "catalog:",
+    "tsx": "catalog:",
+    "typescript": "catalog:"
   },
   "packageManager": "pnpm@10.26.2",
   "devEngines": {
