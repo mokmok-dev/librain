@@ -5,20 +5,5 @@ export default defineConfig({
     globals: true,
     environment: 'node',
   },
-  projects: [
-    {
-      test: {
-        name: 'apps',
-        include: ['apps/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
-      },
-      root: './',
-    },
-    {
-      test: {
-        name: 'packages',
-        include: ['packages/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
-      },
-      root: './',
-    },
-  ],
+  projects: ['packages/*'],
 });
