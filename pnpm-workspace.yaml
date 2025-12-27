@@ -3,6 +3,7 @@ packages:
   - packages/*
 
 catalog:
+  honkit: 6.1.4
   lint-staged: 16.2.7
   sort-package-json: 3.6.0
 
